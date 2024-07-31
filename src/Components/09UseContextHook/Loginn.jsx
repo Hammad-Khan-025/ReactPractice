@@ -31,7 +31,7 @@ function Loginn() {
 
         <input
           type="text"
-          placeholder="Name"
+          placeholder="Name *"
           className={`border-b p-1 focus:outline-none focus:border-b-blue-500 ${
             customAlert && !name ? "border-b-red-500" : "border-b-gray-200"
           }`}
@@ -40,7 +40,7 @@ function Loginn() {
         />
         <input
           type="text"
-          placeholder="Email"
+          placeholder="Email *"
           className={`border-b p-1 focus:outline-none focus:border-b-blue-500 ${
             customAlert && !email ? "border-b-red-500" : "border-b-gray-200"
           }`}
@@ -49,7 +49,7 @@ function Loginn() {
         />
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Password *"
           className={`border-b p-1 focus:outline-none focus:border-b-blue-500 ${
             customAlert && !password ? "border-b-red-500" : "border-b-gray-200"
           }`}

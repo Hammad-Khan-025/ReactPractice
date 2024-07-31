@@ -1,17 +1,17 @@
 import React from 'react'
 import SingleQuestion from './SingleQuestion'
-import QuestionsData from './QuestionsData'
+import QuestionData from './QuestionData';
+
 
 export default function Questions() {
 
-const [questions, setQuestions] = React.useState(QuestionsData)
+const [questions, setQuestions] = React.useState(QuestionData)
 
 const [expandedQuestionId, setExpandedQuestionId] = React.useState(null);
 
 const handleToggle = (id) => {
   setExpandedQuestionId(id === expandedQuestionId ? null : id);
 };
-
 
 const singleElement = questions.map((items)=>{
     return(

@@ -14,7 +14,7 @@ export default function Tabs() {
   const isActive = (index) => value === index ? 'tab-active' : '';
 
   return (
-    <div className='flex flex-col md:flex-row justify-center min-h-screen items-center px-5  gap-8 md:gap-12 tracking-wider'>
+    <div className='flex flex-col md:flex-row justify-center min-h-screen items-center px-5  gap-8 md:gap-12 tracking-wider bg-slate-200'>
 
       <div className='flex md:flex-col flex-wrap gap-4 sm:gap-8 tracking-wider text-black font-bold'>
         

@@ -55,7 +55,7 @@ export default function PassGen() {
               ref={passwordRef}
             />
             <button
-              className="py-2 px-5 font-bold rounded-e-full border-2 bg-blue-500 text-white border-blue-500 hover:bg-blue-700 hover:border-blue-700"
+              className="py-2 px-5 font- rounded-e-full border-2 bg-blue-500 text-white border-blue-500 hover:bg-blue-700 hover:border-blue-700"
               onClick={copyToClipBoard}
             >
               {copied ? "Copied" : "Copy"}{" "}
@@ -66,7 +66,7 @@ export default function PassGen() {
           <div className="mt-10 flex flex-wrap gap-5 font-semibold">
             <input
               type="range"
-              min={6}
+              min={8}
               max={100}
               className="cursor-pointer"
               value={length}

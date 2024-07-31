@@ -23,16 +23,18 @@ const hideModal =  () => {
 
   return (
     <div>
-        <Sidebar/>  
-        <Modal/>
-        <div className=' flex ps-10 bg-black items-center h-16 z-10'>
-            <button  onClick={""}>
+        <Sidebar openSidebar={openSidebar} hideSidebar={hideSidebar} />  
+        <Modal openModal={openModal} hideModal={hideModal} />
+        
+        <div className=' flex gap-x-5 ps-10 bg-black items-center h-16'>
+            <button  onClick={displaySidebar}>
                 <FaBars className='text-xl text-white'/>
             </button>
+            <span className='text-white'>Sidebar</span>
         </div>
 
-        <div className='flex justify-center items-center min-h-[calc(100vh-64px)] z-10'>
-            <button className='bg-black text-white px-3 py-1 rounded font-semibold hover:bg-white hover:text-black border-2 border-black'   onClick={""}>Show modal</button>
+        <div className='flex justify-center items-center min-h-[calc(100vh-64px)]'>
+            <button className='bg-black text-white px-3 py-1 rounded font-semibold hover:bg-white hover:text-black border-2 border-black transition-colors'   onClick={displayModal}>Show modal</button>
         </div>
     </div>
   )

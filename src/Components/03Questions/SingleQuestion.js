@@ -7,7 +7,7 @@ export default function SingleQuestion({ id, question, answer, isOpen, onToggle 
       <div className='flex items-center justify-between gap-5'>
         <h1 className='font-bold'>{question}</h1>
 
-        <button onClick={() => onToggle(id)}>
+        <button className='p-2' onClick={() => onToggle(id)}>
           {isOpen ? 
           <FaChevronUp className='cursor-pointer text-base'/> : 
           <FaChevronDown className='cursor-pointer text-base'/>}
