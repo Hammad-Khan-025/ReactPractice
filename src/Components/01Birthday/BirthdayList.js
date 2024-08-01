@@ -7,7 +7,7 @@ export default function BirthdayList(props) {
         const { id, name, age, image } = person; // Destructuring the 'person' object
         return (
           <div key={id} className="flex items-center gap-6 my-6">
-            <img src={image} alt={name} className="w-20 rounded-full" />
+            <img src={`${process.env.PUBLIC_URL}/images/01birthday-images/${image}`} alt={name} className="w-20 rounded-full" />
             <div>
               <h1 className="font-bold mb-2">{name}</h1> 
               <h2 className="text-gray-600">{age} years</h2> 

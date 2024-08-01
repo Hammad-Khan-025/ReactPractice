@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import TourCard from './TourCard';
 
-// const url = "https://course-api.com/react-tours-project";
-const url = "/react-tours-project"; // Use relative path
+// Use an environment variable for the API URL
+const url = process.env.REACT_APP_API_URL || "/react-tours-project";
 
 export default function Tours() {
   const [tours, setTours] = useState([]);
@@ -13,6 +13,9 @@ export default function Tours() {
     setLoading(true);
     try {
       const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
       const data = await response.json();
       setTours(data);
       setLoading(false);
